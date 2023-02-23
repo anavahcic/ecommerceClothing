@@ -270,6 +270,20 @@ p {
   margin: 15px 0 20px 0;
 }
 
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #222;
+  background-color: #E3E6F3;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,4 +522,43 @@ p {
   position: absolute;
   bottom: 20px;
   right: 10px;
+}
+
+.banner {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url(../assets/banner/b2.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+.banner h4 {
+  color: #E3E6F3;
+  font-size: 16px;
+}
+.banner h2 {
+  color: #E3E6F3;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.banner h2 span {
+  color: #ef3636;
+}
+.banner button:hover {
+  background: #088178;
+  color: #E3E6F3;
 }
