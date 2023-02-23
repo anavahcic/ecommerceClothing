@@ -1,0 +1,50 @@
+@use "./variables" as *;
+
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assets/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: $darkBlue;
+    padding: 40px 80px;
+    margin: 40px 0;
+    h4 {
+        font-size: 22px;
+        font-weight: 700;
+        color: $white;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 600;
+        color: $lightGray; 
+        span {
+            color: $yellow;
+        }
+    }
+    input {
+        height: 3.125rem;
+        padding: 0 1.25em;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    button {
+        background-color: $teal;
+        color: $white;
+        white-space: nowrap;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .form {
+        display: flex;
+        width: 40%;
+    }
+}
+
