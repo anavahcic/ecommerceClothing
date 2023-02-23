@@ -1,0 +1,53 @@
+@use "./variables" as *;
+
+.feature {
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featureBox {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid $lightGreen;
+    border-radius: 4px;
+    margin: 15px 0;
+    &:hover {
+        box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+    }
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    h6 {
+        display: inline-block;
+        padding: 9px 8px 6px 8px;
+        line-height: 1;
+        border-radius: 4px;
+        background-color: $lightPink;
+    }
+}
+
+.feature .featureBox:nth-child(2) h6 {
+    background-color: $greenOne;
+}
+
+.feature .featureBox:nth-child(3) h6 {
+    background-color: $lightBlue;
+}
+
+.feature .featureBox:nth-child(4) h6 {
+    background-color: $blue;
+}
+
+.feature .featureBox:nth-child(5) h6 {
+    background-color: $pink;
+}
+
+.feature .featureBox:nth-child(6) h6 {
+    background-color: $lightOrange;
+}
