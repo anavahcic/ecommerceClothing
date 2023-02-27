@@ -361,6 +361,17 @@ button.white {
   left: 20px;
 }
 
+.mobile {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#close {
+  display: none;
+}
+
 .hero {
   background-image: url(../assets/hero4.png);
   height: 90vh;
@@ -803,4 +814,90 @@ footer .copyright {
 footer .follow i:hover,
 footer a:hover {
   color: #088178;
+}
+
+@media (max-width: 799px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    -webkit-box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navbar .active {
+    right: 0px;
+  }
+  .navbar li {
+    margin-bottom: 25px;
+  }
+  .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile i {
+    color: #222;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+  #lgBag {
+    display: none;
+  }
+  .hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+  .feature {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .featureBox {
+    margin: 15px 15px;
+    padding: 40px 40px;
+  }
+  .smallBanner .bannerBox {
+    min-width: 100%;
+    height: 30vh;
+  }
+  .banner3 {
+    padding: 0 40px;
+  }
+  .banner3 .bannerBox {
+    width: 28%;
+  }
+  .newsletter .form {
+    width: 70%;
+  }
 }
