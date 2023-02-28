@@ -134,4 +134,18 @@
             text-align: start;
         }
     }
+
+    // Single Product Page
+    .productDetails {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .singleProductImage {
+            width: 100%;
+            margin-right: 0px;
+        }
+        .singleProductDetails {
+            width: 100%;
+        }
+    }
 }
