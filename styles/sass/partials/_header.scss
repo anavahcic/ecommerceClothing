@@ -15,7 +15,7 @@
 }
 
 // Shop Page Header 
-.pageHeader {
+#pageHeader {
     background-image: url(../assets/banner/b1.jpg);
     width: 100%;
     height: 40vh;
@@ -29,4 +29,24 @@
         color: $white;
     }
 }
+
+// Blog Page Header 
+.blogHeader {
+    background-image: url(../assets/banner/b19.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    h2, p {
+        color: $white;
+    }
+}
+
+   
+
+
 
