@@ -361,7 +361,8 @@ button.white {
   color: #E3E6F3;
 }
 
-.aboutHeader {
+.aboutHeader,
+.contactHeader {
   background-image: url(../assets/about/banner.png);
   width: 100%;
   height: 40vh;
@@ -379,7 +380,9 @@ button.white {
           flex-direction: column;
   padding: 14px;
 }
-.aboutHeader h2, .aboutHeader p {
+.aboutHeader h2, .aboutHeader p,
+.contactHeader h2,
+.contactHeader p {
   color: #E3E6F3;
 }
 
@@ -985,6 +988,132 @@ button.white {
   border-radius: 20px;
 }
 
+.contactDetails {
+  padding: 40px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactDetails .details {
+  width: 40%;
+}
+.contactDetails .details span {
+  font-size: 12px;
+}
+.contactDetails .details h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+.contactDetails .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.contactDetails .details li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+.contactDetails .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+.contactDetails .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+.contactDetails .details .map {
+  width: 55%;
+  height: 400px;
+}
+.contactDetails .details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.formDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+.formDetails form {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.formDetails form span {
+  font-size: 12px;
+}
+.formDetails form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+.formDetails form input, .formDetails form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #E3E6F3;
+}
+.formDetails form button {
+  background-color: #088178;
+  color: #E3E6F3;
+}
+.formDetails .people {
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.formDetails .people img {
+  width: 65px;
+  height: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 15px;
+}
+.formDetails .people p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+.formDetails .people p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1137,6 +1266,12 @@ footer a:hover {
   .newsletter .form {
     width: 70%;
   }
+  .formDetails {
+    padding: 40px;
+  }
+  .formDetails form {
+    width: 50%;
+  }
 }
 @media (max-width: 477px) {
   .header {
@@ -1238,5 +1373,28 @@ footer a:hover {
   }
   .aboutHead .video {
     width: 100%;
+  }
+  .contactDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactDetails .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contactDetails .map {
+    width: 100%;
+  }
+  .formDetails {
+    margin: 10px;
+    padding: 30px 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .formDetails .form {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
