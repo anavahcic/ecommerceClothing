@@ -2,7 +2,10 @@
 
 .product1 {
     padding: 40px 80px;
-    text-align: center;
+    text-align: right;
+    h2, p {
+        text-align: center;
+    }
     .productContainer {
         display: flex;
         flex-wrap: wrap;
@@ -50,7 +53,7 @@
                 color: $teal;
             }
         }
-        .cart {
+        .fa-solid fa-cart-shopping {
             width: 40px;
             height: 40px;
             line-height: 40px;
@@ -59,7 +62,7 @@
             font-weight: 500;
             color: $teal;
             border: 1px solid $lightGreen;
-            border-radius: 25px;
+            border-radius: 50px;
             position: absolute;
             bottom: 20px;
             right: 10px;
