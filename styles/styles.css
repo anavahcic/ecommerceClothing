@@ -546,6 +546,9 @@ button.white {
 
 .product1 {
   padding: 40px 80px;
+  text-align: right;
+}
+.product1 h2, .product1 p {
   text-align: center;
 }
 .product1 .productContainer {
@@ -604,7 +607,7 @@ button.white {
   font-weight: 700;
   color: #088178;
 }
-.product1 .product .cart {
+.product1 .product .fa-solid fa-cart-shopping {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -614,7 +617,7 @@ button.white {
   font-weight: 500;
   color: #088178;
   border: 1px solid #cce7d0;
-  border-radius: 25px;
+  border-radius: 50px;
   position: absolute;
   bottom: 20px;
   right: 10px;
